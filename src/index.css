@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-display: 'Space Grotesk', sans-serif; /* bold uppercase headings, e.g. "HARUN", "MY PORTFOLIO" */
+  --font-body: 'Inter', sans-serif; /* paragraph copy, form labels, nav links */
+
+  /* Colors */
+  --color-background: #0a0a0a; /* outer page background */
+  --color-surface: #121212; /* dark card/section panels (hero, portfolio, contact) */
+  --color-surface-alt: #1a1a1a; /* slightly lighter panel, e.g. contact form box */
+
+  --color-text-primary: #ffffff; /* headings, "HARUN", form field values */
+  --color-text-secondary: #9a9a9a; /* body paragraphs, subheadings under headings */
+  --color-text-muted: #5c5c5c; /* nav links, "SCROLL", social icons, faint labels */
+
+  --color-border: #2a2a2a; /* subtle dividers, input borders */
+}
