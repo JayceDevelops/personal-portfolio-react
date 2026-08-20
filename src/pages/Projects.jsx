@@ -51,12 +51,15 @@ export default function Projects() {
         <div className="flex flex-col bg-background h-dvh overflow-hidden">
             <Nav/>
 
-            <div className="grid flex-1 min-h-0 grid-cols-1 sm:grid-cols-2 auto-rows-[minmax(12rem,1fr)] sm:grid-rows-2 gap-4 px-4 sm:px-6 lg:pl-24 lg:pr-8 pb-24 sm:pb-5 overflow-y-auto">
+            <div className="grid flex-1 min-h-0 grid-cols-1 lg:grid-cols-2 auto-rows-[minmax(12rem,1fr)] lg:grid-rows-2 gap-4 px-4 sm:px-6 lg:pl-24 lg:pr-8 pb-4 lg:pb-5 overflow-y-auto">
                 {projects.map((project, index) => (
                     <Project key={index} {...project} />
                 ))}
             </div>
-            <Socials/>
+            <div className="flex justify-center py-3 lg:hidden">
+                <Socials inline/>
+            </div>
+            <Socials className="hidden lg:flex"/>
         </div>
     );
 }
