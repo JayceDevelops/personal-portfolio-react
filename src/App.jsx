@@ -6,11 +6,11 @@ function App() {
   return (
     <div className="flex flex-col bg-background min-h-dvh">
       <Nav/>
-      <div className="flex flex-1 flex-col items-center justify-center">
+      <div className="flex flex-1 flex-col items-center justify-center px-4 text-center">
         <div className="relative inline-block">
-          <h1 className="absolute bottom-full left-10 mb-3 font-body text-2xl text-surface-alt">I am</h1>
-          <h1 className="font-display text-8xl font-bold text-white">Jayce Develops</h1>
-          <h1 className="absolute top-full right-0 mt-3 font-body text-xl text-surface-alt">aspiring software engineer . . .</h1>
+          <h1 className="static mb-2 font-body text-lg text-surface-alt sm:absolute sm:bottom-full sm:left-10 sm:mb-3 sm:text-2xl">I am</h1>
+          <h1 className="font-display text-5xl font-bold text-white break-words sm:text-6xl md:text-8xl">Jayce Develops</h1>
+          <h1 className="static mt-2 font-body text-sm text-surface-alt sm:absolute sm:top-full sm:right-0 sm:mt-3 sm:text-xl">aspiring software engineer . . .</h1>
         </div>
       </div>
       <Socials/>

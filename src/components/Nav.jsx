@@ -6,9 +6,9 @@ export default function Nav() {
     console.log(pathname);
 
     return (
-        <div className="flex justify-between px-8 py-5">
-            <h1 className="font-body text-xl font-bold text-white">Jayce Develops</h1>
-            <div className="flex flex-row items-center gap-5 font-body text-text-muted text-l font-regular hover: cursor-pointer">
+        <div className="flex justify-between items-center px-4 py-4 sm:px-8 sm:py-5">
+            <h1 className="font-body text-base font-bold text-white sm:text-xl">Jayce Develops</h1>
+            <div className="flex flex-row items-center gap-3 sm:gap-5 font-body text-text-muted text-sm sm:text-l font-regular hover: cursor-pointer">
                 <Page text={"Home"} to={"/"} active={pathname === "/"}/>
                 <Page text={"Projects"} to={"/Projects"} active={pathname === "/Projects"}/>
                 <Page text={"Contact"} to={"/Contact"} active={pathname === "/Contact"}/>

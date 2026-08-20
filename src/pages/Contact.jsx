@@ -38,7 +38,7 @@ export default function Contact() {
         <div className="flex flex-col bg-background min-h-dvh">
             <Nav/>
 
-            <div className="flex flex-1 flex-col items-center justify-center gap-6 px-8 py-10">
+            <div className="flex flex-1 flex-col items-center justify-center gap-6 px-4 py-10 sm:px-8">
                 <div className="w-full max-w-md text-center">
                     <h2 className="font-body text-2xl font-bold text-white">Get In Touch</h2>
                     <p className="font-body text-text-muted text-sm mt-2">

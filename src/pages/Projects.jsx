@@ -51,7 +51,7 @@ export default function Projects() {
         <div className="flex flex-col bg-background h-dvh overflow-hidden">
             <Nav/>
 
-            <div className="grid flex-1 min-h-0 grid-cols-2 grid-rows-2 gap-4 pl-24 pr-8 pb-5">
+            <div className="grid flex-1 min-h-0 grid-cols-1 sm:grid-cols-2 auto-rows-[minmax(12rem,1fr)] sm:grid-rows-2 gap-4 px-4 sm:px-6 lg:pl-24 lg:pr-8 pb-24 sm:pb-5 overflow-y-auto">
                 {projects.map((project, index) => (
                     <Project key={index} {...project} />
                 ))}
