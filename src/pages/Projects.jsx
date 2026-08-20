@@ -4,6 +4,8 @@ import Socials from "../components/Socials"
 import ResumeMaker from "../assets/ResumeMaker.png"
 import GetItDone from "../assets/GetItDone.png"
 import PersonalLibrary from "../assets/PersonalLibrary.png"
+import EtchASketch from "../assets/EtchASketch.png"
+
 import Project from "../components/Project"
 import LeftArrow from "../assets/LeftArrow.svg"
 import RightArrow from "../assets/RightArrow.svg"
@@ -36,28 +38,23 @@ export default function Projects() {
             tools: "HTML5, CSS3, JavaScript (Vanilla), Web Storage API",
             image: PersonalLibrary
         },
-
+        {
+            name: "Etch-A-Sketch",
+            description: "A browser-based Etch-a-Sketch canvas built with HTML5, CSS3, and vanilla JavaScript. Features custom grid sizing (rows/columns) and multi-color palette drawing via event-driven DOM manipulation.",
+            github: "https://github.com/JayceDevelops/Etch-A-Sketch",
+            website: "",
+            tools: "HTML5, CSS3, Javascript (Vanilla)",
+            image: EtchASketch
+        },
     ]
     return (
-        <div className="flex flex-col bg-background min-h-dvh">
+        <div className="flex flex-col bg-background h-dvh overflow-hidden">
             <Nav/>
 
-            <div className="flex flex-1 flex-col items-center justify-center min-h-full gap-5">
-                <div className="flex flex-row gap-5">
-                    <Project/>
-                    <Project/>
-                    <Project/>
-                    
-                </div>
-                <div className="flex items-center justify-center min-w-full gap-5">
-                    <button className="bg-white rounded-full p-0.5 cursor-pointer">
-                        <img src={LeftArrow} alt="Left Arrow" className="w-10"/>
-                    </button>
-                    <h1 className="font-body text-white text-3xl font-bold">1</h1>
-                    <button className="bg-white rounded-full p-0.5 cursor-pointer">
-                        <img src={RightArrow} alt="Right Arrow" className="w-10"/>
-                    </button>
-                </div>
+            <div className="grid flex-1 min-h-0 grid-cols-2 grid-rows-2 gap-4 pl-24 pr-8 pb-5">
+                {projects.map((project, index) => (
+                    <Project key={index} {...project} />
+                ))}
             </div>
             <Socials/>
         </div>
